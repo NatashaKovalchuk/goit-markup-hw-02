@@ -3,6 +3,12 @@
     --secondary-color:#757575;
     --accent-color:#2196F3;
     --background-color:#2F303A;
+    --border-color:#ECECEC;
+    --logo-color:#000000;
+    --solutions-color:#ffffff;
+    --team-background-color:#F5F4FA;
+    --portfolio-border-color:#EEEEEE;
+    --btn-focus-color:#f59d07;
     --main-font:'Roboto', sans-serif;
     --title-size:36px;
     --text-size:14px;
@@ -22,7 +28,7 @@ body {
 /* Header */
 .header {
     padding: 25px;
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .wrapper {
@@ -66,11 +72,15 @@ body {
     color: var(--accent-color);
 }
 
+.current {
+    color: var(--accent-color);
+}
+
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    color: #000000;
+    color: var(--logo-color);
     margin-right: 90px;
     text-decoration: none;
 }
@@ -118,7 +128,7 @@ body {
 }
 
 .solutions-title {
-    color:#ffffff;
+    color: var(--solutions-color);
     font-size: 44px;
     font-weight: 900;
     letter-spacing: 0.06em;
@@ -130,7 +140,7 @@ body {
 }
 
 .solutions-btn {
-    color: #ffffff;
+    color: var(--solutions-color);;
     font-size: var(--secondary-size);
     font-weight: 700;
     padding: 12px 32px;
@@ -203,7 +213,7 @@ body {
 
 /* Team */
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--team-background-color);
 }
 
 .team-item {
@@ -285,12 +295,12 @@ body {
 }
 
 .portfolio-btn:hover {
-    color: #ffffff;
-    background-color: #2196F3;
+    color: var(--solutions-color);
+    background-color: var(--accent-color);
 }
 
 .portfolio-btn:focus {
-    background-color: #f59d07;
+    background-color: var(--btn-focus-color);
 }
 
 .portfolio-list {
@@ -301,11 +311,15 @@ body {
 .portfolio-item {
     margin-right: 25px;
     margin-bottom: 25px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--portfolio-border-color);
 }
 
 .portfolio-item:nth-child(3n + 3) {
     margin-right: 0px;
+}
+
+.portfolio-link {
+    text-decoration: none;
 }
 
 .work-name {
@@ -341,7 +355,7 @@ body {
 }
 
 .footer-logo {
-    color: #fff;
+    color: var(--solutions-color);
     margin-bottom: 20px;
 }
 
@@ -360,7 +374,7 @@ body {
 
 
 .adress {
-    color: #fff;
+    color: var(--solutions-color);
     font-weight: 400;
     font-style: normal;
     line-height: 24px;
