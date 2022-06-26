@@ -322,6 +322,10 @@ body {
     text-decoration: none;
 }
 
+.color {
+    color:var(--primary-color);
+}
+
 .work-name {
     font-weight: 700;
     font-size: 18px;
